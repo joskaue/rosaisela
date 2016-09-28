@@ -1,0 +1,56 @@
+<html>
+
+  <head>
+
+    <title>ejemplo css javascript</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">
+        function mostrar1(){
+		document.getElementById("container2").style.display="block";
+		document.getElementById("container1").style.visibility="hidden";
+        }
+        function mostrar2(){
+                document.getElementById("container2").style.display="none";
+		document.getElementById("container1").style.visibility="visible";
+        }
+    </script>
+  </head>
+
+  <body>
+
+
+      <div id="header"></div>
+      <div id="container2" class="container2" style="display:none;">
+	  	<form>
+					<center><table>
+						<tr>
+							<td>Nombre:</td>
+							<td><input type="text" placeholder="Ingresa tu nombre"></td>
+						</tr>
+						<tr>
+							<td>Contraseña:</td>
+							<td><input type="password" placeholder="Ingresa tu contraseña"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><span onClick="mostrar2()"><center>
+                            <input name="button" type="submit" onClick="mensaje();document.[form1].reset()" value="Regresar" /> </span>
+							</center>
+						</tr>
+					</table></center>
+				</form>
+	
+      </div>	
+      <div id="container1" class="container1"> 
+      <span onClick="mostrar1()"><center><input type="submit" value="Ingresa" /></span></center>    
+      </div>
+
+  </body>
+
+</html>    
+
+
+
+
+
+ 
